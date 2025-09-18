@@ -1,6 +1,6 @@
 ## ETW
 
-This tool comes to patch [ETW](https://learn.microsoft.com/pt-br/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) writing a RET instruction (`0x3c`) in `NtTraceEvent` address. Otherwise, this project only uses NT APIs functions with Direct Syscalls.
+This tool comes to patch [ETW](https://learn.microsoft.com/pt-br/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) writing a RET instruction (`0xC3`) in `NtTraceEvent` address. Otherwise, this project only uses NT APIs functions with Direct Syscalls.
 
 > ###### `NtOpenProcess`: get process handle <br> `NtQueryInformationProcess`: get NTDLL address <br> `LdrGetProcedureAddress`: get target function address <br> `NtProtectVirtualMemory`: change protection memory <br> `NtAllocateVirtualMemory`: allocate memory <br> `NtWriteVirtualMemory`: write memory <br> `NtReadVirtualMemory`: read memory
 
