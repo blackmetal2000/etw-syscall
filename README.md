@@ -24,5 +24,3 @@ PS C:\Windows\Temp> .\etw.exe 9136
 [^] Enjoy!
 PS C:\Windows\Temp>
 ```
-
-![alt text](https://i.imgur.com/ANppvFo.png)
