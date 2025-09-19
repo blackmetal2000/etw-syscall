@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 
 namespace etwsyscall
@@ -107,9 +107,6 @@ namespace etwsyscall
             byte[] ret = new byte[0XC3];
             IntPtr NtTraceVA = new IntPtr(ntdllAddress.ToInt64() + NtTraceOffset);
 
-            //Console.WriteLine("Press any key to continue...");
-            //Console.ReadKey();
-
             var oldProtect = Memory.ProtectMemory(
                 hProcess,
                 NtTraceVA,
@@ -134,9 +131,6 @@ namespace etwsyscall
             );
 
             Console.WriteLine("[^] Enjoy!");
-
-            //Console.WriteLine("Press any key to continue...");
-            //Console.ReadKey();
         }
     }
 }
